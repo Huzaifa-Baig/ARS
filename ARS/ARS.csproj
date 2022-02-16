@@ -188,6 +188,8 @@
     <Content Include="Views\Partials\_navbar.cshtml" />
     <Content Include="Views\Partials\_sidenav.cshtml" />
     <Content Include="Views\Shared\_LayoutLogin.cshtml" />
+    <Content Include="Views\Admin\dashboard.cshtml" />
+    <Content Include="Views\Admin\login2.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
