@@ -100,6 +100,15 @@
     <Content Include="App_Data\DbARS_log.ldf">
       <DependentUpon>DbARS.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\assets\demo\chart-area-demo.js" />
+    <Content Include="Content\assets\demo\chart-bar-demo.js" />
+    <Content Include="Content\assets\demo\chart-pie-demo.js" />
+    <Content Include="Content\assets\demo\datatables-demo.js" />
+    <Content Include="Content\favicon\apple-touch-icon.png" />
+    <Content Include="Content\favicon\favicon-16x16.png" />
+    <Content Include="Content\favicon\favicon-32x32.png" />
+    <Content Include="Content\favicon\favicon.ico" />
+    <Content Include="Content\img\error-404-monochrome.svg" />
     <Content Include="Content\css\bootstrap-grid.css" />
     <Content Include="Content\css\bootstrap-grid.min.css" />
     <Content Include="Content\css\bootstrap-grid.rtl.css" />
@@ -117,6 +126,9 @@
     <Content Include="Content\css\bootstrap.rtl.css" />
     <Content Include="Content\css\bootstrap.rtl.min.css" />
     <Content Include="Content\css\Site.css" />
+    <Content Include="Content\css\styles.css" />
+    <Content Include="Content\scripts\datatables-simple-demo.js" />
+    <Content Include="Content\scripts\scripts.js" />
     <Content Include="Global.asax" />
     <Content Include="Content\scripts\bootstrap.bundle.js" />
     <Content Include="Content\scripts\bootstrap.bundle.min.js" />
@@ -129,6 +141,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -159,17 +172,22 @@
     <Content Include="Content\css\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\css\bootstrap-grid.min.css.map" />
     <Content Include="Content\css\bootstrap-grid.css.map" />
+    <Content Include="Content\favicon\site.webmanifest" />
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Shared\_navbar.cshtml" />
-    <Content Include="Views\Shared\_footer.cshtml" />
+    <Content Include="Views\Partials\_footer.cshtml" />
     <Content Include="Content\scripts\bootstrap.min.js.map" />
     <Content Include="Content\scripts\bootstrap.js.map" />
     <Content Include="Content\scripts\bootstrap.esm.min.js.map" />
     <Content Include="Content\scripts\bootstrap.esm.js.map" />
     <Content Include="Content\scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Content\scripts\bootstrap.bundle.js.map" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\login.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Partials\_navbar.cshtml" />
+    <Content Include="Views\Partials\_sidenav.cshtml" />
+    <Content Include="Views\Shared\_LayoutLogin.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -185,9 +203,7 @@
       <DependentUpon>202202131815141_addTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
